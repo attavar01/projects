@@ -1,0 +1,22 @@
+.login-section{
+    padding-top: 8%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form-fields{
+        width: 20vw;
+    }
+    .sign-in{
+        font-size: 1.5em;
+    }
+}
+
+.material-symbols-outlined{
+    position: relative;
+    top: 5px;
+}

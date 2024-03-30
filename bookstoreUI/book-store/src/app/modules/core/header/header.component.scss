@@ -1,0 +1,24 @@
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.banner{
+    background-color: aliceblue;
+    padding: 2%;
+    display: flex;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+    }
+    .banner-left,.banner-center,.banner-right{
+        display: flex;
+        align-items: center;
+    }
+    .banner-center a{
+        padding: 0 10px;
+    }
+}

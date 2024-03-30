@@ -1,0 +1,18 @@
+.reservation-history{
+    padding-top: 8%;
+    text-align: center;
+    margin: 0 20vw;
+
+    .reservation-history-table{
+        height: 80vh;
+        max-width: 60vw;
+    }
+}
+
+::ng-deep .ag-header-cell-label {
+    justify-content: center;
+}
+
+::ng-deep .ag-filter-filter input.ag-text-field-input{
+    text-align: center;
+}

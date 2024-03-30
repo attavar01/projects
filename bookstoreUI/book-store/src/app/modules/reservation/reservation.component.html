@@ -1,0 +1,29 @@
+<div class="reserve-page">
+        <div class="book-image">
+            <img src={{bookDetail.image}} alt="book image">
+        </div>
+        <div class="book-details">
+            <div class="book-name">{{bookDetail.name}}</div>
+            <div><em>By</em> {{bookDetail.author}}</div>
+            <div><em>Publisher </em>  {{bookDetail.publisher}}</div>
+        </div>
+        <mat-form-field class="reservation-date-picker">
+            <mat-label>Enter a date range</mat-label>
+            <mat-date-range-input [formGroup]="range" [rangePicker]="picker" [min]="todayDate" [dateFilter]="myFilter" disabled>
+              <input  formControlName="start" matStartDate placeholder="Start date">
+              <input  formControlName="end" matEndDate placeholder="End date">
+            </mat-date-range-input>
+            <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker touchUi #picker disabled="false"></mat-date-range-picker>
+        </mat-form-field>
+        <div class="reserve-button">
+            <button mat-flat-button  color="primary" (click)="onReserve()" [disabled]="!isReservable">Reserve 
+                <span class="material-symbols-outlined">library_add
+                    </span>
+            </button>
+        </div>
+</div>
+<div class="description-section">
+    <div class="description-header">Book Description<div class="description">{{bookDetail.description}}</div></div>
+</div>

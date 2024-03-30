@@ -1,0 +1,8 @@
+<header>
+    <nav class="banner">
+            <div class="banner-left"><a>Book Store</a></div>
+            <div class="banner-center"><a [routerLink]="['/home']">Home</a><a [routerLink]="['/mybooks']">My Books</a></div>
+            <div *ngIf="!hasSignedIn" class="banner-right"><a [routerLink]="['/login']">Sign In</a></div>
+            <div *ngIf="hasSignedIn" class="banner-right"><a [routerLink]="['/logout']">Sign Out</a></div>
+    </nav>
+  </header>
